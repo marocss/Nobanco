@@ -8,3 +8,9 @@ A clone of Nubank's interface.
 
 - React Native
 - Expo
+
+---
+
+## Example
+
+![](nobanco-example.gif)

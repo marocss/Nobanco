@@ -1,5 +1,4 @@
 import React from 'react';
-// import { View } from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -13,9 +12,16 @@ import {
   SignOutButtonText,
 } from './styles';
 
-export default function Menu() {
+export default function Menu({ translateY }) {
   return (
-    <Container>
+    <Container
+      style={{
+        opacity: translateY.interpolate({
+          inputRange: [0, 150],
+          outputRange: [0, 1],
+        }),
+      }}
+    >
       <Code>
         <QRCode
           value="https://github.com/marocss"

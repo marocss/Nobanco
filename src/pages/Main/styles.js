@@ -1,3 +1,4 @@
+import { Animated } from 'react-native';
 import styled from 'styled-components/native';
 import Constants from 'expo-constants';
 
@@ -10,11 +11,11 @@ export const Container = styled.View`
 
 export const Content = styled.View`
   flex: 1;
-  max-height: 400px;
+  max-height: 380px;
   z-index: 5;
 `;
 
-export const Card = styled.View`
+export const Card = styled(Animated.View)`
   flex: 1;
   background: #fff;
   border-radius: 4px;
@@ -23,14 +24,15 @@ export const Card = styled.View`
   position: absolute;
   left: 0;
   right: 0;
-  top: 380px;
+  top: 0;
 `;
 
 export const CardHeader = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 0 30px;
+  padding-top: 30px;
 `;
 
 export const CardContent = styled.View`
