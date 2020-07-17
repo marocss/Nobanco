@@ -4,9 +4,9 @@ A clone of Nubank's interface.
 
 ---
 
-## Tecnologies
+## Technologies
 
-- React Native
+- React-Native
 - Expo
 
 ---
